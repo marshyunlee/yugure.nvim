@@ -1,0 +1,2 @@
+WRN 2026-10-26T22:05:08.323 ?.86358    server_start:197: Failed to start server: operation not permitted: /tmp/claude-501/nvim.haru/oBTEAY/nvim.86358.0
+WRN 2026-10-26T22:05:16.989 ?.86773    server_start:197: Failed to start server: operation not permitted: /tmp/claude-501/nvim.haru/bD9wVc/nvim.86773.0
