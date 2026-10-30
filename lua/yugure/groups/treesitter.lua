@@ -9,7 +9,7 @@ return function(p, config)
     ["@variable.member"] = { fg = p.text },
 
     ["@constant"] = { fg = p.iris },
-    ["@constant.builtin"] = { fg = p.iris },
+    ["@constant.builtin"] = { fg = p.iris, italic = italic },
     ["@constant.macro"] = { fg = p.iris },
 
     ["@module"] = { fg = p.teal },
@@ -27,12 +27,12 @@ return function(p, config)
     ["@character"] = { fg = p.gold },
     ["@character.special"] = { fg = p.iris },
 
-    ["@boolean"] = { fg = p.iris },
+    ["@boolean"] = { fg = p.iris, italic = italic },
     ["@number"] = { fg = p.iris },
     ["@number.float"] = { fg = p.iris },
 
     ["@type"] = { fg = p.teal },
-    ["@type.builtin"] = { fg = p.teal },
+    ["@type.builtin"] = { fg = p.teal, bold = true },
     ["@type.definition"] = { fg = p.teal },
     ["@attribute"] = { fg = p.iris },
     ["@attribute.builtin"] = { fg = p.iris },

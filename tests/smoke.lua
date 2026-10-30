@@ -31,6 +31,8 @@ check(count > 500, "only " .. count .. " groups defined")
 local normal = vim.api.nvim_get_hl(0, { name = "Normal" })
 check(normal.fg ~= nil and normal.bg ~= nil, "Normal has no colors")
 check(vim.api.nvim_get_hl(0, { name = "Keyword" }).italic, "Keyword is not italic by default")
+check(vim.api.nvim_get_hl(0, { name = "@constant.builtin" }).italic, "@constant.builtin is not italic by default")
+check(vim.api.nvim_get_hl(0, { name = "@type.builtin" }).bold, "@type.builtin is not bold")
 
 -- Options take effect.
 require("yugure").setup({ transparent = true, italics = false, overrides = { Comment = { fg = "#FFFFFF" } } })

@@ -3,11 +3,11 @@ return function(p, config)
 
   return {
     Comment = { fg = p.muted, italic = italic },
-    Constant = { fg = p.iris },
+    Constant = { fg = p.iris, italic = italic },
     String = { fg = p.gold },
     Character = { fg = p.gold },
     Number = { fg = p.iris },
-    Boolean = { fg = p.iris },
+    Boolean = { fg = p.iris, italic = italic },
     Float = { fg = p.iris },
     Identifier = { fg = p.text },
     Function = { fg = p.foam },
@@ -23,7 +23,7 @@ return function(p, config)
     Define = { fg = p.rose },
     Macro = { fg = p.iris },
     PreCondit = { fg = p.rose },
-    Type = { fg = p.teal },
+    Type = { fg = p.teal, bold = true },
     StorageClass = { fg = p.rose, italic = italic },
     Structure = { fg = p.teal },
     Typedef = { fg = p.teal },
