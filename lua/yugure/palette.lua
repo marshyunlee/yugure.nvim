@@ -11,19 +11,19 @@ return {
   high = "#383A43", -- borders, matched parens, faint fills
 
   -- Text, bright to dim.
-  text = "#9DA4B2", -- body text
-  iron = "#8F97A6", -- secondary text
-  subtle = "#7F8797", -- interface text
-  muted = "#5E6577", -- comments, quotes, placeholders
-  faint = "#454A58", -- line numbers, whitespace markers
+  text = "#A9B0BF", -- body text
+  iron = "#9BA3B3", -- secondary text
+  subtle = "#8B93A3", -- interface text
+  muted = "#697083", -- comments, quotes, placeholders
+  faint = "#505563", -- line numbers, whitespace markers
 
   -- Accents. One role each; errors use love and nothing else does.
-  rose = "#B98590", -- keywords, tags, bullets, table heads, h1
-  gold = "#BFA077", -- strings, warnings, highlights, h2
-  foam = "#7AA3B5", -- functions, links, info, primary actions, h3
-  teal = "#7BA09F", -- types, additions, hints, success, h4
-  iris = "#9A8EB9", -- numbers, attributes, metadata, h5
-  love = "#BA6B70", -- errors and deletions
+  rose = "#C6919C", -- keywords, tags, bullets, table heads, h1
+  gold = "#CCAC83", -- strings, warnings, highlights, h2
+  foam = "#86B0C2", -- functions, links, info, primary actions, h3
+  teal = "#87ACAB", -- types, additions, hints, success, h4
+  iris = "#A69AC6", -- numbers, attributes, metadata, h5
+  love = "#C7777C", -- errors and deletions
 
   none = "NONE",
 }

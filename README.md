@@ -67,6 +67,9 @@ require("lualine").setup({ options = { theme = "yugure" } })
 
 ## Palette
 
+Text and accent colors sit 0.04 higher in OKLCH lightness than the Inkdrop
+table, for more contrast; hues, chroma and the grounds are unchanged.
+
 | name    | hex       | role                                              |
 | ------- | --------- | ------------------------------------------------- |
 | base    | `#141518` | editor background                                 |
@@ -75,17 +78,17 @@ require("lualine").setup({ options = { theme = "yugure" } })
 | overlay | `#1F2026` | active statusline, terminal black                 |
 | med     | `#2A2C34` | visual selection, menu selection                  |
 | high    | `#383A43` | borders, matched parens                           |
-| text    | `#9DA4B2` | body text                                         |
-| iron    | `#8F97A6` | secondary text                                    |
-| subtle  | `#7F8797` | interface text, punctuation                       |
-| muted   | `#5E6577` | comments, quotes, placeholders                    |
-| faint   | `#454A58` | line numbers, whitespace markers                  |
-| rose    | `#B98590` | keywords, tags, list bullets, table heads, h1     |
-| gold    | `#BFA077` | strings, warnings, search, cursor line number, h2 |
-| foam    | `#7AA3B5` | functions, links, info, primary buttons, h3       |
-| teal    | `#7BA09F` | types, inline code, additions, hints, h4          |
-| iris    | `#9A8EB9` | numbers, attributes, metadata, h5                 |
-| love    | `#BA6B70` | errors and deletions, nothing else                |
+| text    | `#A9B0BF` | body text                                         |
+| iron    | `#9BA3B3` | secondary text                                    |
+| subtle  | `#8B93A3` | interface text, punctuation                       |
+| muted   | `#697083` | comments, quotes, placeholders                    |
+| faint   | `#505563` | line numbers, whitespace markers                  |
+| rose    | `#C6919C` | keywords, tags, list bullets, table heads, h1     |
+| gold    | `#CCAC83` | strings, warnings, search, cursor line number, h2 |
+| foam    | `#86B0C2` | functions, links, info, primary buttons, h3       |
+| teal    | `#87ACAB` | types, inline code, additions, hints, h4          |
+| iris    | `#A69AC6` | numbers, attributes, metadata, h5                 |
+| love    | `#C7777C` | errors and deletions, nothing else                |
 
 ## Supported plugins
 
@@ -108,4 +111,4 @@ color is a hex value, and exercises the options.
 
 ## License
 
-MIT. The palette is reproduced from the Inkdrop theme's published color table.
+MIT. The palette is adapted from the Inkdrop theme's published color table.
