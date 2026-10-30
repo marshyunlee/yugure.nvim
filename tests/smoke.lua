@@ -30,12 +30,14 @@ check(count > 500, "only " .. count .. " groups defined")
 
 local normal = vim.api.nvim_get_hl(0, { name = "Normal" })
 check(normal.fg ~= nil and normal.bg ~= nil, "Normal has no colors")
+check(vim.api.nvim_get_hl(0, { name = "Keyword" }).italic, "Keyword is not italic by default")
 
 -- Options take effect.
 require("yugure").setup({ transparent = true, italics = false, overrides = { Comment = { fg = "#FFFFFF" } } })
 vim.cmd.colorscheme("yugure")
 check(vim.api.nvim_get_hl(0, { name = "Normal" }).bg == nil, "transparent did not clear the Normal background")
 check(not vim.api.nvim_get_hl(0, { name = "Comment" }).italic, "italics = false left Comment italic")
+check(not vim.api.nvim_get_hl(0, { name = "Keyword" }).italic, "italics = false left Keyword italic")
 check(vim.api.nvim_get_hl(0, { name = "Comment" }).fg == 0xFFFFFF, "override did not apply")
 
 local lualine = require("lualine.themes.yugure")

@@ -45,7 +45,7 @@ Call `setup` before `colorscheme` only when you want to change a default.
 ```lua
 require("yugure").setup({
   transparent = false, -- keep the terminal's own background
-  italics = true, -- italic comments and virtual text
+  italics = true, -- italic comments, keywords and virtual text
   terminal_colors = true, -- set the 16 :terminal colors
   overrides = {}, -- table of group -> nvim_set_hl spec, or function(palette)
 })
@@ -55,7 +55,7 @@ Overrides take the palette, so a tweak can reuse its names:
 
 ```lua
 overrides = function(p)
-  return { CursorLine = { bg = p.surface }, ["@keyword"] = { fg = p.rose, italic = true } }
+  return { CursorLine = { bg = p.surface }, ["@keyword"] = { fg = p.rose, bold = true } }
 end
 ```
 
